@@ -3,4 +3,4 @@ RUN pip install streamlit pandas scikit-learn joblib
 COPY src/* /app/
 COPY model/milk_q_model.pkl /app/model/milk_q_model.pkl
 WORKDIR /app
-ENTRYPOINT ["streamlit", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
+ENTRYPOINT ["streamlit", "joblib", "run", "app.py", "--server.port=8501", "--server.address=0.0.0.0"]
