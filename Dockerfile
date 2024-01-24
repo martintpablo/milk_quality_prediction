@@ -1,5 +1,5 @@
 FROM python:3.8
-RUN pip install streamlit pandas scikit-learn
+RUN pip install streamlit pandas scikit-learn joblib
 COPY src/* /app/
 COPY model/milk_q_model.pkl /app/model/milk_q_model.pkl
 WORKDIR /app
